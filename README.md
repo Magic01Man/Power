@@ -1,5 +1,5 @@
 # Power
-make password list
+make best password list
 
 # about
 with this script you can make a perfect password list for you'r need .

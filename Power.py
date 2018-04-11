@@ -1,4 +1,4 @@
-7import hashlib
+import hashlib
 import os
 import sys
 class password:

@@ -1,18 +1,16 @@
 # Power
-make best password list
+Making your best password lists.
 
 # about
-with this script you can make a perfect password list for you'r need .
-
-you only need to feed the required information to the script to get the perfect password list!
+This is a python script to make your password lists. it is fast and small tools. you only need to feed the required information to the script to get the perfect password list!
 # DOWNLOAD
-open terminal:
+For downloading it open terminal and type followed command in it:
 ```
 git clone https://github.com/Mgicman01/Power.git
 
 ```
 # USAGE
-open terminal:
+For running tool, open terminal and type followed command:
 ```
 python Power.py
 ```
@@ -28,7 +26,7 @@ enter : 2001
 enter : magic
 I edite your password : y
 ```
-you can see you'r password list in you'r folder
+You can see your  password list in your folder that save power script.
 # WARNING
 do not use this script for crimiual purpose
 

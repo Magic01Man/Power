@@ -1,3 +1,5 @@
+#Author ------> Magic Man
+#Author's Email -----> magicmangit@gmail.com
 import hashlib
 import os
 import sys
@@ -8,12 +10,12 @@ class password:
         pas = []                           #for input password
         has = []                            # for input hash's password
         try:
-            tedad = int(raw_input('how many do you have information ? :  '))  # enter how do you have information
+            count = int(raw_input('how many do you have information ? :  '))  # enter how do you have information
         except ValueError:
             print('only you should enter number')   # for Instead eroor
             sys.exit()
 
-        for i in range(0,tedad):         #  count number information 
+        for i in range(0,count):         #  count number information 
             b=raw_input('enter : ')      # input you'r password
             pas.append(b)                # full list pas
             hasmd5 = hashlib.md5(b'%s' % (b)).hexdigest()  # Convert password to hash(md5)
@@ -27,21 +29,21 @@ class password:
         mypas = raw_input('I edite your password : ')
 
         if mypas == 'y' or mypas == 'Y':
-            pasja = []
+            pasnew = []
             pasa = []
-            for pasjadid in pas:
-                mym = pasjadid.replace('a','@')  #change a to @
+            for newpas in pas:
+                mym = newpas.replace('a','@')  #change a to @
                 pasa.append(mym)
-                hoo = pasjadid.replace('s','$') # change s to $
+                hoo = newpas.replace('s','$') # change s to $
                 pasa.append(hoo)
-                end = pasjadid.replace('a','@') 
+                end = newpas.replace('a','@') 
                 end = end.replace('s','$')    # change s to $ and a to @
                 end = end.replace('i','!')   # change i to !
-                pasja.append(end)
+                pasnew.append(end)
 
-            pasja = pasja+pasa
-            pas = pasja + pas 
-            print("this is edit you'r password -----> {} " . format(pasja))
+            pasnew = pasnew+pasa
+            pas = pasnew + pas           #add edite you'r password whith orginal password
+            print("this is edit you'r password -----> {} " . format(pasnew))
         elif mypas == 'n' or mypas == 'N':
             pass
         else:

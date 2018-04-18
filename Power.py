@@ -3,20 +3,24 @@
 import hashlib
 import os
 import sys
+
 class password:
     
     def pas1(self):
+
         text = open('password list.text','w')    #for enter password in notpad
         pas = []                           #for input password
         has = []                            # for input hash's password
         try:
-            count = int(raw_input('how many do you have information ? :  '))  # enter how do you have information
+            count = int(raw_input('how many do you have information  about target(only enter number) ? '))  # enter how do you have information
         except ValueError:
             print('only you should enter number')   # for Instead eroor
             sys.exit()
-
+            
+        ma = 0
         for i in range(0,count):         #  count number information 
-            b=raw_input('enter : ')      # input you'r password
+            ma += 1
+            b=raw_input('enter {} information : ' . format(ma)).replace(' ','')     # input you'r password
             pas.append(b)                # full list pas
             hasmd5 = hashlib.md5(b'%s' % (b)).hexdigest()  # Convert password to hash(md5)
             hassha224 = hashlib.sha224(b'%s' % (b)).hexdigest() # Convert password to hash(sha224)
@@ -26,7 +30,7 @@ class password:
         print('this is your pas ---> {}' . format(pas))
         print("hash's you'r password ----> {}" . format(has))
 
-        mypas = raw_input('I edite your password : ')
+        mypas = raw_input("i change you'r password and add to you'r password (Y/N) ? ")
 
         if mypas == 'y' or mypas == 'Y':
             pasnew = []
@@ -41,14 +45,14 @@ class password:
                 end = end.replace('i','!')   # change i to !
                 pasnew.append(end)
 
+            print("this is change you'r password -----> {} " . format(pasnew))
             pasnew = pasnew+pasa
             pas = pasnew + pas           #add edite you'r password whith orginal password
-            print("this is edit you'r password -----> {} " . format(pasnew))
         elif mypas == 'n' or mypas == 'N':
             pass
         else:
             print('you should only enter N or Y')
-            
+                    
 
         ted = len(pas)
         ted2 = len(has)
@@ -113,6 +117,8 @@ print("""
                 
                 """)
 
+
 me=password()
 me.pas1()
+
 

@@ -20,11 +20,11 @@ python Power.py
 ```
 
 ```
-how many do you have information? 3
-enter : jack
-enter : 2001
-enter : magic
-I edite your password : y
+how many do you have information  about target(only enter number) ? 3
+enter 1 information : jack
+enter 2 information : 2008
+enter 3 information : magic
+i change you'r password and add to you'r password (Y/N) ?  y
 ```
 You can see your  password list in your folder that save power script.
 # WARNING

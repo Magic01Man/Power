@@ -25,7 +25,7 @@ python Power.py -r
 ```
 # EXAMPLE
 ```
-python Power.py
+python Power.py -r
 ```
 ```
 how many do you have information  about target(only enter number) ? 3

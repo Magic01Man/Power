@@ -51,8 +51,8 @@ enter secound year : 2018
 --------------------------------------------------------------------------------
 this is years ----> [2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019]
 --------------------------------------------------------------------------------
-You can see your  password list in your folder that save power script.
 ```
+You can see your  password list in your folder that save power script.
 # WARNING
 do not use this script for crimiual purpose
 

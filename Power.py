@@ -32,7 +32,6 @@ class password:
         print(80 * '-')
         print("hash's you'r password ----> {}" . format(has))
         print(80 * '-')
-	print('')
         print("warning : if you think the target doesnt have a strong password , don't enter (y) . because it will result in a longer password")
         mypas = raw_input("i change you'r password and add to you'r password (Y/N) ? ")
 
@@ -59,7 +58,6 @@ class password:
             print('you should only enter N or Y')
 
         ted = len(pas)
-	print('')
         questionyear = raw_input("if you don't know the target date of birth . do you want me to find it for you (Y/N) ? ")
         if questionyear == 'y' or questionyear == 'Y':
             try:
@@ -101,7 +99,7 @@ class password:
                             text.write("{}{}{}{}\n" . format(pas[pas5_year] , year[pas_year3] , pas[pas6_year] , pas[pas7_year]))
                             text.write("{}{}{}{}\n" . format(year[pas_year3] , pas[pas5_year] , pas[pas6_year] , pas[pas7_year]))
 
-        elif question_year == 'n' or question_year == 'N':
+        elif questionyear == 'n' or questionyear == 'N':
                 pass
         else:
             print('you should enter Y or N')
@@ -115,8 +113,14 @@ class password:
         for d in range(0,ted):
             text.write("{}\n".format(pas[d]))
 
-        for haas in range(0,ted2):
-            text.write("{}\n".format(has[haas]))
+        question_hash = raw_input("do you want hashs you'r password add to passwordlist (Y/N) ? ")
+
+        if question_hash == 'Y' or question_hash == 'y':
+            for haas in range(0,ted2):
+                text.write("{}\n".format(has[haas]))
+            
+        elif question_hash == 'N' or question_hash == 'n':
+            pass
 
         for n in range(0,ted):
             for m in range(0,ted):
@@ -193,6 +197,7 @@ except IndexError:
     print("""              -h ----> Help 
               -r ----> run script
               -v ----> Version of the program  """)
+
 
 
 

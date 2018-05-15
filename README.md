@@ -7,7 +7,7 @@ password list
 # DOWNLOAD
 For downloading it open terminal and type followed command in it:
 ```
-git clone https://github.com/Mgicman01/Power.git
+git clone https://github.com/Magic01Man/Power.git
 
 ```
 # Options
